@@ -39,7 +39,7 @@ p {
     cursor: pointer;
 }
 #closeMenuH {
-    display: none;
+    display: none !important;
     cursor: pointer;
 }
 #inactive {
@@ -306,7 +306,7 @@ p {
     width:100%;
     }
     #closeMenuH {
-    display: block;
+    display: block !important;
     position: absolute;
     top: 48px;
     left: 24px;
