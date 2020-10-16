@@ -20,22 +20,22 @@
     <!--<img src="./design/desktop-design-slide-1.jpg" alt="" style="position: absolute; z-index: 2; opacity:0.3;  margin: 0;">-->
     <!--<img src="./design/mobile-design.jpg" alt="" style="position: absolute; opacity:0.3; z-index: 2; margin: 0;">-->
     <!--<img src="./design/mobile-navigation.jpg" alt="" style="position: absolute; opacity:0.3; z-index: 4; margin: 0;">-->
-    <span id="menuH" onclick="buttonMenuH()"><img src="./images/icon-hamburger.svg"></span>
+    <span id="menuH" onclick="buttonMenuH()"><img src="./images/icon-hamburger.svg" alt="menuH"></span>
     <span id="logo">room</span>
     <ul id="menu">
-      <span id="closeMenuH" onclick="buttonMenuH()"><img src="./images/icon-close.svg"></span>
+      <span id="closeMenuH" onclick="buttonMenuH()"><img src="./images/icon-close.svg" alt="closeMenuH"></span>
       <li><a href="">home</a></li>
       <li><a href="">shop</a></li>
       <li><a href="">about</a></li>
       <li><a href="">contact</a></li>
     </ul>
     <div id="carousel-img">
-      <img src="./images/desktop-image-hero-1.jpg">
-      <img src="./images/desktop-image-hero-2.jpg">
-      <img src="./images/desktop-image-hero-3.jpg">
+      <img src="./images/desktop-image-hero-1.jpg" alt="desktop-image-hero-1">
+      <img src="./images/desktop-image-hero-2.jpg" alt="desktop-image-hero-2">
+      <img src="./images/desktop-image-hero-3.jpg" alt="desktop-image-hero-3">
       <div id="carousel-nav">
-        <a onclick="carouselNavClick(-1)"></a>
-        <a onclick="carouselNavClick(1)"></a>
+        <a id="carousel-nav-left" onclick="carouselNavClick(-1)"></a>
+        <a id="carousel-nav-right" onclick="carouselNavClick(1)"></a>
       </div>
     </div>
     <div id="carousel-text">
@@ -72,7 +72,7 @@
 
   <div id="row-2">
     <div>
-      <img src="./images/image-about-dark.jpg">
+      <img src="./images/image-about-dark.jpg" alt="image-about-dark">
     </div>
     <div>
       <span>ABOUT OUR FURNITURE</span>
@@ -84,7 +84,7 @@
       </p>
     </div>
     <div>
-      <img src="./images/image-about-light.jpg">
+      <img src="./images/image-about-light.jpg" alt="image-about-light">
     </div>
   </div>
   
@@ -92,6 +92,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">OESLICK David</a>.
   </div>
-  <script type="text/javascript" src="./js/index.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 </html>
