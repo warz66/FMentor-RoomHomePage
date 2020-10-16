@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Room homepage</title>
+  <link rel="stylesheet" href="./style/style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+  <div id="inactive"></div>
+
+  <div id="row-1">
+    <!--<img src="./design/desktop-design-slide-1.jpg" alt="" style="position: absolute; z-index: 2; opacity:0.3;  margin: 0;">-->
+    <!--<img src="./design/mobile-design.jpg" alt="" style="position: absolute; opacity:0.3; z-index: 2; margin: 0;">-->
+    <!--<img src="./design/mobile-navigation.jpg" alt="" style="position: absolute; opacity:0.3; z-index: 4; margin: 0;">-->
+    <span id="menuH" onclick="buttonMenuH()"><img src="./images/icon-hamburger.svg"></span>
+    <span id="logo">room</span>
+    <ul id="menu">
+      <span id="closeMenuH" onclick="buttonMenuH()"><img src="./images/icon-close.svg"></span>
+      <li><a href="">home</a></li>
+      <li><a href="">shop</a></li>
+      <li><a href="">about</a></li>
+      <li><a href="">contact</a></li>
+    </ul>
+    <div id="carousel-img">
+      <img src="./images/desktop-image-hero-1.jpg">
+      <img src="./images/desktop-image-hero-2.jpg">
+      <img src="./images/desktop-image-hero-3.jpg">
+      <div id="carousel-nav">
+        <a onclick="carouselNavClick(-1)"></a>
+        <a onclick="carouselNavClick(1)"></a>
+      </div>
+    </div>
+    <div id="carousel-text">
+      <div>
+        <h2>Discover innovative ways to decorate</h2>
+        <p>
+          We provide unmatched quality, comfort, and style for property owners across the country. 
+          Our experts combine form and function in bringing your vision to life. Create a room in your 
+          own style with our collection and make your property a reflection of you and what you love.
+        </p>
+      </div>
+      <div>
+        <h2>We are available all across the globe</h2>
+        <p>
+          With stores all over the world, it's easy for you to find furniture for your home or place of business. 
+          Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
+          store locator. Any questions? Don't hesitate to contact us today.
+        </p>
+      </div>
+      <div>
+        <h2>Manufactured with the best materials</h2>
+        <p>
+          Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
+          to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+          experience in this industry, we understand what customers want for their home and office.
+        </p>
+      </div>
+      <div id="shop-now">
+        <span>SHOP NOW</span>
+        <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/></svg>
+      </div> 
+    </div>
+  </div>
+
+  <div id="row-2">
+    <div>
+      <img src="./images/image-about-dark.jpg">
+    </div>
+    <div>
+      <span>ABOUT OUR FURNITURE</span>
+      <p>
+        Our multifunctional collection blends design and function to suit your individual taste.
+        Make each room unique, or pick a cohesive theme that best express your interests and what
+        inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+        or anything in between. Product specialists are available to help you create your dream space.
+      </p>
+    </div>
+    <div>
+      <img src="./images/image-about-light.jpg">
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">OESLICK David</a>.
+  </div>
+  <script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>

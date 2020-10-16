@@ -1,0 +1,319 @@
+.attribution { font-size: 11px; text-align: center; margin-top: 50px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    font-family: 'Spartan', sans-serif;
+    margin:0;
+}
+
+p {
+    font-size: 12px;
+    line-height: 1.75;
+    letter-spacing: -0.2px;
+    color: hsl(0, 0%, 63%);
+}
+
+/* row-1 */
+
+#row-1 {
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#logo {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-size: 23px;
+    left: 62px;
+    top:56px;
+}
+#menuH {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 24px;
+    top: 48px;
+    cursor: pointer;
+}
+#closeMenuH {
+    display: none;
+    cursor: pointer;
+}
+#inactive {
+    display: none;
+}
+.is-active {
+    display: flex !important;
+    justify-content: space-around;
+    align-items: center;
+    animation: slideY 0.5s;
+}
+@keyframes slideY {
+    0%  {top:-110px;}
+    100% {top:0px;}
+}
+#menu {
+    position: absolute;
+    z-index: 3;
+    left: 142px;
+    top:60px; 
+    list-style: none;
+    margin: 0;
+}
+#menu li {
+    display: inline;
+    padding-right: 26px;
+}
+#menu a {
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+}
+#menu a:hover {
+    padding-bottom: 10px;
+    background: linear-gradient(white,white) bottom no-repeat;
+    background-size: 15px 2px;
+}
+#carousel-img {
+    position: relative;
+    max-width:840px;
+}
+#carousel-img img{
+    max-width:840px;
+    animation: anim 1.2s;
+}
+@keyframes anim {
+    0%  {opacity:0.7;}
+    100% {opacity:1;}
+}
+#carousel-text {
+    padding: 86px 88px 0px 100px;
+}
+#carousel-text h2 {
+    font-weight: 600;
+    letter-spacing: -1.7px;
+    font-size: 2.5em;
+    line-height: 45px;
+    margin-bottom: 22px;
+}
+#shop-now {
+    margin-top: 25px;
+}
+#shop-now span {
+    letter-spacing: 10px;
+    font-size: 12px;
+    padding-right:29px;
+}
+#shop-now:hover,#shop-now:hover path {
+    fill: hsl(0, 0%, 63%);
+    color: hsl(0, 0%, 63%);
+    cursor: pointer;
+}
+#carousel-nav {
+    position: absolute;
+    left: 840px;
+    bottom: 0px;
+    width: 160px;
+    height: 80px;
+    background-color: black;
+}
+#carousel-nav a {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+}
+#carousel-nav a:first-child {
+    float: left;
+    background: url("../images/icon-angle-left.svg") no-repeat center;
+}
+#carousel-nav a:last-child {
+    float: right;
+    background: url("../images/icon-angle-right.svg") no-repeat center;
+}
+#carousel-nav a:hover {
+    background-color: hsl(0, 0%, 27%);
+}
+
+/* row-2 */
+
+#row-2 {
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+#row-2 div:nth-child(2){
+    padding: 70px 48px 0px 48px;
+}
+#row-2 div:nth-child(2) span {
+    font-size: 13px;
+    letter-spacing: 4.2px;
+    font-weight: bold;
+}
+#row-2 div:nth-child(2) p {
+    margin-top: 8.5px;
+}
+
+/* MediaQueries */
+
+@media (max-width: 1440px) {
+    #carousel-nav {
+    left: calc(840px - (1440px - 100vw));
+    }
+}
+@media (max-width: 1420px) {
+    #carousel-text {
+    padding: 70px 70px 0px 70px;
+    }
+}
+@media (max-width: 1280px) {
+    #carousel-nav {
+    left: 680px;
+    }
+    #carousel-text {
+    padding: 35px 20px 0px 35px;
+    }
+    #carousel-text h2 {
+    font-size: 2em;
+    }
+    #row-2 div:first-child img {
+    width: calc(420px - (1280px - 100vw));
+    height: 266px;
+    object-fit: cover;
+    }
+    #row-2 div:nth-child(3) img {
+    width: calc(440px - (1280px - 100vw));
+    height: 266px;
+    object-fit: cover;
+    }
+    #shop-now span {
+    padding-right: 10px;
+    }
+    #row-2 div:nth-child(2){
+    padding: 30px;
+    }
+}
+@media (max-width: 1115px) {
+    #carousel-img img {
+    width: calc(840px - (1115px - 100vw));
+    height: 534px;
+    object-fit: cover;
+    }
+    #carousel-nav {
+    left: calc(680px - (1115px - 100vw));
+    }
+    #row-2 div:first-child img {
+    width: 256px;
+    }
+    #row-2 div:nth-child(3) img {
+    width: 276px;
+    }
+}
+@media (max-width: 860px) {
+    #row-1, #row-2 {
+    flex-wrap:wrap;
+    }
+    #carousel-img img {
+    width: 100%;
+    }
+    #carousel-text {
+    padding: 50px 34px 74px 32px;
+    }
+    #shop-now {
+    margin-top: 45px;
+    }
+    #shop-now span {
+    padding-right: 29px;
+    }
+    #carousel-nav {
+    left: auto;
+    right: 0;
+    width: 111px;
+    height: 56px;
+    }
+    #row-2 div {
+    width: 100%;
+    }
+    #row-2 img {
+    padding: 0px 32px;
+    width: auto !important;
+    }
+    #row-2 div:nth-child(2){
+    padding: 60px 32px 40px 32px;
+    }
+}
+@media (max-width: 540px) {
+    #menuH {
+    display: block;
+    }
+    #row-2 img {
+    padding: 0px;
+    width: 100% !important;
+    height: 100% !important;
+    }
+    #carousel-img {
+    width: 100%;
+    }
+    #carousel-img img {
+    width: 100%;
+    height: auto;
+    }
+    #carousel-text h2 {
+    line-height: 30px;
+    letter-spacing: -0.8px;
+    font-size: 1.7em;
+    margin-bottom: 17px;
+    }
+    #carousel-img img:nth-child(1) {
+    content:url("../images/mobile-image-hero-1.jpg");
+    }
+    #carousel-img img:nth-child(2) {
+    content:url("../images/mobile-image-hero-2.jpg");
+    }
+    #carousel-img img:nth-child(3) {
+    content:url("../images/mobile-image-hero-3.jpg");
+    }
+    #menu {
+    display: none;
+    top:0;
+    left:0;
+    width: calc(100% - 80px);
+    height: 110px;
+    padding: 0;
+    padding-left: 80px;
+    background-color: white;
+    }
+    #menu li {
+    padding:0px;
+    }
+    #menu a {
+    font-weight: 700;
+    color: black;
+    }
+    #menu a:hover {
+    padding-bottom: 10px;
+    background: linear-gradient(black,black) bottom no-repeat;
+    background-size: 15px 2px;
+    }
+    .is-inactive {
+    display: block !important;
+    position:absolute;
+    z-index:2;
+    background:rgba(0,0,0,.5);
+    width:100%;
+    }
+    #closeMenuH {
+    display: block;
+    position: absolute;
+    top: 48px;
+    left: 24px;
+    }
+    #logo {
+    top: 40px;
+    left: calc(50%);
+    transform: translate(-50%);
+    }
+}
